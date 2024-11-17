@@ -1,0 +1,32 @@
+
+.nav{
+ 
+    display: grid;
+  color: aliceblue;
+
+}
+.nav_main{
+    margin-top: 40px;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.nav-logo{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.nav-menu span a {
+    background-color: aliceblue;
+    color: black ;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.nav-menu a {
+   text-decoration: none;
+   color: aliceblue;
+   font-weight: 700;
+    text-align: end;
+
+    margin-right: 20%;
+
+}

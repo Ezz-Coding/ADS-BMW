@@ -1,0 +1,74 @@
+.explore img{
+    width: 40px;
+
+    background-color: red;
+    border-radius: 50%;
+}
+.hero-play img{
+    width: 40px;
+
+    background-color: rgba(219, 198, 170, 0.395);
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+}
+.hero{
+    margin-left: 10%;
+}
+.hero-text p{
+
+ font-size: xxx-large;
+ font-weight: 900;
+}
+.explore{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 220px;
+    background-color: aliceblue;
+    color: gray;
+    font-weight: 700;
+    border-radius: 30px;
+}
+.explore img{
+    margin-top:5px;
+    cursor: pointer;
+}
+.explore p{
+    margin-left: 20px;
+}
+.hero-play {
+    width: 200px;
+    text-align: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 50%;
+    margin-top: 80px;
+}
+.hero-play img {
+    margin-right: 30px;
+    cursor: pointer;
+}
+.hero-play p{
+    font-size: larger;
+
+}
+.dots{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100px;
+    font-size: xxx-large;
+    font-weight: 900;
+}
+.dots li{
+    cursor: pointer;
+    list-style: none;
+}
+.dot-play{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.dot.orange {
+    color: orangered;
+}
