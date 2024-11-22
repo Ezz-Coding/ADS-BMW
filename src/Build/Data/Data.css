@@ -72,3 +72,21 @@
 .dot.orange {
     color: orangered;
 }
+@media (max-width:500px) {
+    .dot-play {
+        width: 200px;
+        text-align: start;
+        display: grid;
+        grid-template-columns:1fr;
+        margin-left: 5%;
+        margin-top: 0px;
+    }
+    .hero-text p{
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: medium;
+    }
+   .explore{
+    margin-top: 100px;
+   }
+}

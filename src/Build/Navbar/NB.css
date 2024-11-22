@@ -30,3 +30,16 @@
     margin-right: 20%;
 
 }
+@media (max-width:1300px) {
+    .nav-menu{
+        display: none;
+    }
+    
+}@media (max-width:550px) {
+    .nav-menu{
+        display: none;
+    }
+    .nav-logo{
+        font-size: x-large;
+    }
+}
