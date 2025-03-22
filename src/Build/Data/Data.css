@@ -15,15 +15,17 @@
     margin-left: 10%;
 }
 .hero-text p{
-
+padding-top: 10%;
+    color: aliceblue;   
  font-size: xxx-large;
  font-weight: 900;
+ margin: 0;
 }
 .explore{
-    margin-top: 200px;
+    margin-top: 150px;
     display: grid;
     grid-template-columns: auto auto;
-    width: 220px;
+    width: 260px;
     background-color: aliceblue;
     color: gray;
     font-weight: 700;
@@ -37,19 +39,26 @@
     margin-left: 20px;
 }
 .hero-play {
-    width: 200px;
+    width: 220px;
     text-align: end;
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 50%;
     margin-top: 80px;
+    color: aliceblue;
+    margin-top: -156px;
 }
 .hero-play img {
     margin-right: 30px;
     cursor: pointer;
+
 }
 .hero-play p{
-    font-size: larger;
+    font-size: x-large;
+    color: aliceblue;
+    margin: 0;
+    margin-top: 10px;
+
 
 }
 .dots{
@@ -58,6 +67,8 @@
     width: 100px;
     font-size: xxx-large;
     font-weight: 900;
+    color: aliceblue;
+ margin-top: -110px;
 }
 .dots li{
     cursor: pointer;

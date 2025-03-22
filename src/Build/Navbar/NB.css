@@ -1,9 +1,11 @@
 
 .nav{
  
-    display: grid;
+   position: fixed;
+   z-index: 2;
+   top: 0;
   color: aliceblue;
-
+width: 100%;
 }
 .nav_main{
     margin-top: 40px;
@@ -15,20 +17,21 @@
     font-size: xx-large;
     font-weight: 700;
 }
-.nav-menu span a {
-    background-color: aliceblue;
-    color: black ;
-    padding: 10px 30px;
-    border-radius: 30px;
-}
+
 .nav-menu a {
    text-decoration: none;
    color: aliceblue;
    font-weight: 700;
     text-align: end;
 
-    margin-right: 20%;
-
+    margin-right: 10%;
+padding: 10px;
+transition: .5s;
+border-radius: 20px;
+}
+.nav-menu a:hover{
+color: #000;
+background-color: aliceblue;
 }
 @media (max-width:1300px) {
     .nav-menu{

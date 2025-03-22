@@ -1,34 +1,49 @@
-import React from 'react'
-import assets from '../../assets/assets'
-import './Data.css'
-const Data = ({  setPlayStatus,
-    DataApp,
-    Count,
-    setCount,
-    playstatus}) => {
-  return (
-    <div className='hero'>
-      <div className="hero-text">
-        <p>{DataApp.text1}</p>
-        <p>{DataApp.text2}</p>
-      </div>
-      <div className="explore">
-        <p>Explore the features</p>
-        <img src={assets.arrowrightline} alt="not this image" />
-      </div>
-      <div className="dot-play">
-        <ul className="dots">
-            <li onClick={()=> setCount(0)} className={Count === 0?"dot orange":"dot"}>.</li>
-            <li onClick={()=> setCount(1)}  className={Count === 1?"dot orange":"dot"}>.</li>
-            <li onClick={()=> setCount(2)}  className={Count === 2?"dot orange":"dot"}>.  </li>
-        </ul>
-        <div className="hero-play">
-          <img  onClick={()=>setPlayStatus(!playstatus)} src={playstatus?assets.pause:assets.start}alt="not found this image" />
-          <p>See the video</p>
-        </div>
-      </div>
-    </div>
-  )
-}
+import React, { createContext, useEffect, useState } from 'react'
 
-export default Data
+import './Data.css'
+const CextentIds = createContext();
+
+const Data  =(props)=>{
+  const [count ,setCount] = useState(0);
+  const [playstatus ,setplaystatus] = useState(false);
+
+    const DataApp =[
+      {text1:"Dive into",text2:"What you love"},
+      {text1:"Indulge",text2:"Your passions"},
+      {text1:"Give in to",text2:"Your passions"}
+    ]
+    const Time=(prevCount)=>{
+      if (prevCount === 2) {
+        return 0;
+      } else {
+        return prevCount + 1;
+        
+      }
+    }
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCount((prevCount) => (
+       Time(prevCount)
+        ));
+        
+      }, 6000);
+    
+      return () => clearInterval(interval); 
+    }, []);
+
+    
+    const value = {
+      count,
+      setCount,
+      playstatus,
+      setplaystatus,
+      DataApp
+        }  
+  return (
+   <CextentIds.Provider value={value}>
+ {props.children}
+   </CextentIds.Provider>
+  )
+
+}
+export  {Data,CextentIds}
